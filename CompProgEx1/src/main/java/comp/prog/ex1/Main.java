@@ -7,7 +7,7 @@ public class Main {
         MessageFormatter formatter = new MessageFormatter();
         Greeter greeter = new Greeter(formatter);
 
-        String greetings = greeter.greet("Jalis");
+        String greetings = greeter.greet(null);
         System.out.println(greetings);
     }
 }

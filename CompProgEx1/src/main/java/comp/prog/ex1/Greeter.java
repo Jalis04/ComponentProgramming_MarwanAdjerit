@@ -16,23 +16,4 @@ public class Greeter {
     }
 
 
-    public class GreeterTest {
-        @Test
-        public void testGreet() {
-            MessageFormatter formatter = new MessageFormatter();
-            Greeter greeter = new Greeter(formatter);
-
-            // Test with null value
-            String result1 = greeter.greet(null);
-            assertNull(result1);
-
-            // Test with empty string
-            String result2 = greeter.greet("");
-            assertEquals("Hello, !", result2);
-
-            // Test with "Student" string
-            String result3 = greeter.greet("Student");
-            assertSame("Hello, Student!", result3);
-        }
-    }
 }
