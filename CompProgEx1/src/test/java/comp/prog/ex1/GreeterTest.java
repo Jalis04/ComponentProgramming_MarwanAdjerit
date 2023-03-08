@@ -34,7 +34,7 @@ class GreeterTest {
 
         // Test with String  value
         String result = greeter.greet("Student");
-        //assertSame("Hello Student !", result); tried an assertSame
-        assertEquals("Hello Student !", result);
+        assertSame("Hello Student !", result); //The strings are not equal, who string is "Student", greet Method returns "Hello Student !"
+        //assertEquals("Hello Student !", result);
     }
 }
